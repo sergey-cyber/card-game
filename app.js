@@ -1,4 +1,4 @@
-
+window.onload = () => {
 let pole = document.querySelector(".gamePole");
 let card = document.querySelectorAll(".card");
 let btnRetry = document.querySelector(".btnRetry");
@@ -166,7 +166,7 @@ btnRetry.onclick = function(){
 	score.innerText = scoreStroke + scoreReslt;
 	console.log("1");
 }
-
+}
 
 
 
