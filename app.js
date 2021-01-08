@@ -83,17 +83,27 @@ menu.addEventListener("click", function(e){
 	if(e.target.className == "menuStart") {
 		if(complexity == "easy") {
 			mixItem(8);
+			setTimeout( () => {
+				for(i=0; i<card.length; i++) {
+					card[i].style.transform = 'rotateY(180deg)';
+				}
+			}, 2000);
 		} else if(complexity == "medium") {
 			mixItem(4);
+			setTimeout( () => {
+				for(i=0; i<card.length; i++) {
+					card[i].style.transform = 'rotateY(180deg)';
+				}
+			}, 3000);
 		} else if(complexity == "hard") {
 			mixItem(0);
+			setTimeout( () => {
+				for(i=0; i<card.length; i++) {
+					card[i].style.transform = 'rotateY(180deg)';
+				}
+			}, 4000);
 		}
 		blockMenu.style.display = "none";
-		setTimeout( () => {
-			for(i=0; i<card.length; i++) {
-				card[i].style.transform = 'rotateY(180deg)';
-			}
-		}, 2000);
 	}
 });
 
@@ -151,16 +161,26 @@ btnRetry.onclick = function(){
 	//Обработчик событий кнопки Начать снова
 	if(complexity == "easy") {
 		mixItem(8);
+		setTimeout( () => {
+			for(i=0; i<card.length; i++) {
+				card[i].style.transform = 'rotateY(180deg)';
+			}
+		}, 2000);
 	} else if(complexity == "medium") {
 		mixItem(4);
+		setTimeout( () => {
+			for(i=0; i<card.length; i++) {
+				card[i].style.transform = 'rotateY(180deg)';
+			}
+		}, 3000);
 	} else if(complexity == "hard") {
 		mixItem(0);
+		setTimeout( () => {
+			for(i=0; i<card.length; i++) {
+				card[i].style.transform = 'rotateY(180deg)';
+			}
+		}, 4000);
 	}
-	setTimeout( () => {
-		for(i=0; i<card.length; i++) {
-			card[i].style.transform = 'rotateY(180deg)';
-		}
-	}, 2000);
 	this.style.display = "none";
 	scoreReslt = 0;
 	score.innerText = scoreStroke + scoreReslt;
